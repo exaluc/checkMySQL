@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import click
-from checkinmysql import MySQLConn
+from checkmysql import MySQLConn
 
 @click.group()
 def cli():

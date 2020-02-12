@@ -17,7 +17,6 @@ def check(host, user, password, db, port):
     '''
     Check base de donnee
     '''
-    print(host, user, password, db, port)
     con = MySQLConn.create(host, user, password, db, int(port))
     res = con.test()
     click.secho('+----------------------+')

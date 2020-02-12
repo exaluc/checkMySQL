@@ -27,6 +27,10 @@ res = con.test()
 print(res)
 ```
 
+![](screens/ok.png)
+![](screens/ko.png)
+
+
 ## Requirements
 
 * Click==7.0

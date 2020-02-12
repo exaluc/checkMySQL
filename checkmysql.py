@@ -19,7 +19,7 @@ class Connection:
 
     def test(self):
         '''
-        retourne ok si le select 1 functionne.
+        Test connection MySQL database, return 1 if ok
         '''
         try:
             connection_mysql = self.connect(self.host, self.user, self.password, self.db, self.port, cursorclass=pymysql.cursors.DictCursor, connect_timeout=2)

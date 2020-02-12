@@ -15,13 +15,13 @@ def cli():
 
 def check(host, user, password, db, port):
     '''
-    Check base de donnee
+    Check database connection
     '''
     con = MySQLConn.create(host, user, password, db, int(port))
     res = con.test()
-    click.secho('+----------------------+')
-    click.secho('| MySQL test connexion |')
-    click.secho('+----------------------+')
+    click.secho('+-----------------------+')
+    click.secho('| MySQL test connection |')
+    click.secho('+-----------------------+')
     click.secho(f'| host: {host}')
     click.secho(f'| port: {port}')
     if res == 'OK':
@@ -29,7 +29,7 @@ def check(host, user, password, db, port):
     else:
         click.secho('| state: '+ click.style("KO", bold=True, fg="red"))
         click.secho(f'| error: {res}')
-    click.secho('+----------------------+')
+    click.secho('+-----------------------+')
 
 if __name__ == '__main__':
     cli()

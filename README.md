@@ -1,5 +1,5 @@
 # checkMySQL
-> Check MySQL connexion
+> Check MySQL connection
 
 Python3
 
